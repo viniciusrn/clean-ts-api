@@ -1,6 +1,6 @@
 export interface AuthenticationModel {
   email: string
-  password: TemplateStringsArray
+  password: string
 }
 
 export interface Authentication {
