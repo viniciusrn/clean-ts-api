@@ -5,7 +5,7 @@ import {
   AuthenticationModel,
   HashComparer,
   Encrypter,
-  UpdateAccessRepository
+  UpdateAccessTokenRepository
 } from './db-authentication.protocols'
 
 const makeFakeAccount = (): AccountModel => ({
@@ -47,8 +47,8 @@ const makeEncrypter = (): Encrypter => {
   return new EncrypterStub()
 }
 
-const makeUpdateAccessRepository = (): UpdateAccessRepository => {
-  class UpdateAccessRepositoryStub implements UpdateAccessRepository {
+const makeUpdateAccessRepository = (): UpdateAccessTokenRepository => {
+  class UpdateAccessRepositoryStub implements UpdateAccessTokenRepository {
     async updateAccessToken (id: string, token: string): Promise<void> {
       return new Promise(resolve => resolve())
     }
@@ -61,7 +61,7 @@ interface SutTypes {
   loadAccountByEmailRepositoryStub: LoadAccountByEmailRepository
   hashComparerStub: HashComparer
   encrypterStub: Encrypter
-  updateAccessRepositoryStub: UpdateAccessRepository
+  updateAccessRepositoryStub: UpdateAccessTokenRepository
 }
 
 const makeSut = (): SutTypes => {
