@@ -2,10 +2,14 @@
   "name": "clean-node-api",
   "version": "1.1.0",
   "description": "NodeJs Rest API using TDD, Clean Architecture and Typescript",
+  "keywords": [],
+  "author": "Vinicius R. Nogueira",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "start": "node dist/main/server.js",
     "build": "rimraf dist && tsc",
+    "debug": "node --inspect=0.0.0.0:9222 --nolazy dist/main/server.js",
     "up": "npm run build && sudo docker-compose up -d",
     "down": "sudo docker-compose down",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
@@ -16,9 +20,6 @@
     "test:ci": "npm test -- --coverage",
     "check": "npm-check -s -u"
   },
-  "keywords": [],
-  "author": "Vinicius R. Nogueira",
-  "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
     "@types/bcrypt": "^3.0.0",
