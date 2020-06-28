@@ -16,7 +16,7 @@
     "check": "npm-check -s -u"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vinicius R. Nogueira",
   "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
@@ -51,5 +51,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.9",
     "validator": "^13.0.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
