@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/viniciusrn/clean-ts-api.svg?branch=master)](https://travis-ci.org/viniciusrn/clean-ts-api)
+[![Coverage Status](https://coveralls.io/repos/github/viniciusrn/clean-ts-api/badge.svg)](https://coveralls.io/github/viniciusrn/clean-ts-api)
+
 # **Clean Node API**
 
 ---
